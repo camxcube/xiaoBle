@@ -1,0 +1,192 @@
+//define NameOfTheLayerInConfig LayerNumber
+//eg.
+//#define DEFAULT 0
+//#define LOWER   1
+//#define RAISE   2
+//
+//This allows you to use those defines, e.g. LOWER later in your keymap.
+//&mo LOWER
+
+#define L0 0
+#define L1 1
+#define L2 2
+#define L3 3
+#define L4 4
+#define L5 5
+#define L6 6
+#define L7 7
+#define L8 8
+#define L9 9
+#define L10 10
+#define L11 11
+#define L12 12
+
+
+#include "key-common.dtsi"
+
+
+/ {
+
+
+    keymap {
+        compatible = "zmk,keymap";
+
+
+        1st_layer {
+          label = "";
+
+                        bindings = <
+   &lt L4 TAB  &kp Q  &kp W  &kp E       &kp R      &kp T             &kp Y      &kp U         &kp I      &kp O    &kp P         &kp BSPC
+   &kp LCMD    &kp A  &kp S  &kp D       &kp F      &kp G             &kp H      &kp J         &kp K      &kp L    &lt L12 SEMI  &kp ENTER
+   &kp LSHFT   &kp Z  &kp X  &kp C       &kp V      &kp B             &kp N      &kp M         &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
+                             &lt L2 ESC  &kp SPACE  &kp LALT          &kp LCTRL  &lt L3 SPACE  &kp RCMD
+                        >;
+                };
+
+// Dont't delete this layer, the purpose of this layer is to make layer 0 be the 1st layer, layer 2 be the 2nd layer and so on
+        disabled_layer {
+          label = "";
+
+                        bindings = <
+    &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+    &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+    &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                         &none  &none  &none    &none  &none  &none
+                        >;
+                };
+
+
+        2st_layer {
+          label = "";
+
+                        bindings = <
+   &kp LG(COMMA)  &kp LG(H)          &kp LG(LEFT)  &kp UP         &kp LG(RIGHT)  &kp LG(GRAVE)          &kp F13      &kp F14   &kp F15   &kp F16        &kp F17   &kp BSPC
+   &kp LCMD       &kp LC(LS(TAB))    &kp LEFT      &kp DOWN       &kp RIGHT      &kp LC(TAB)            &tog L6      &none     &kp HOME  &kp PAGE_UP    &kp BSPC  &kp ENTER
+   &kp LSHFT      &mac_screen_sleep  &kp LA(LEFT)  &kp LG(LS(H))  &kp LA(RIGHT)  &kp DEL                &macro_caps  &kp DEL   &kp END   &kp PAGE_DOWN  &none     &kp RSHFT
+                          	                       &none          &none          &none                  &kp RCTRL    &kp RALT  &kp RCMD
+                        >;
+                };
+
+
+        3rd_layer {
+            label = "";
+
+                        bindings = <
+   &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5            &kp N6    &kp N7            &kp N8     &kp N9     &kp N0    &kp MINUS
+   &kp LCMD   &none   &kp BSLH  &kp RBKT  &kp LBKT   &none             &kp LEFT  &kp DOWN          &kp UP     &kp RIGHT  &kp SEMI  &kp EQUAL
+   &kp LSHFT  &none   &none     &none     &none      &none             &none     &kp SINGLE_QUOTE  &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+                    	        &kp LCMD  &kp LCTRL  &kp LALT          &none     &none             &none
+                        >;
+                };
+
+
+         4th_layer {
+            label = "";
+
+                        bindings = <
+   &none         &mo L11        &kp F1  &kp F2    &kp F3     &kp F10           &kp CLEAR2    &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_EQUAL     &kp BSPC
+   &kp LC(UP)    &kp LC(LEFT)   &kp F4  &kp F5    &kp F6     &kp F11           &kp KP_PLUS   &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
+   &kp LC(DOWN)  &kp LC(RIGHT)  &kp F7  &kp F8    &kp F9     &kp F12           &kp KP_MINUS  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
+                                        &kp LCMD  &kp LCTRL  &kp LALT          &tog L5       &kp KP_N0  &kp KP_DOT 
+                        >;
+                };
+
+
+         5th_layer {
+            label = "";
+
+                        bindings = <
+   &kp TAB    &none  &none  &none     &none      &none             &kp CLEAR2    &kp KP_N7  &kp KP_N8   &kp KP_N9  &none            &kp BSPC
+   &kp LCMD   &none  &none  &none     &none      &none             &kp KP_PLUS   &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
+   &kp LSHFT  &none  &none  &none     &none      &none             &kp KP_MINUS  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
+                            &kp LCMD  &kp LCTRL  &kp LALT          &tog L5       &kp KP_N0  &kp KP_DOT
+                        >;
+                };
+
+
+         6th_layer {
+            label = "";
+
+                        bindings = <
+   &lt L9 TAB  &kp Q  &kp W  &kp E       &kp R      &kp T             &kp Y     &kp U         &kp I      &kp O    &kp P         &kp BSPC
+   &kp LCTRL   &kp A  &kp S  &kp D       &kp F      &kp G             &kp H     &kp J         &kp K      &kp L    &lt L12 SEMI  &kp ENTER
+   &kp LSHFT   &kp Z  &kp X  &kp C       &kp V      &kp B             &kp N     &kp M         &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
+                             &lt L7 ESC  &kp SPACE  &kp LALT          &kp LCMD  &lt L8 SPACE  &kp RCTRL
+                        >;
+                };
+
+
+         7th_layer {
+            label = "";
+
+                        bindings = <
+   &kp LC(COMMA)  &kp LA(F4)       &kp HOME      &kp UP        &kp END        &none                &WIN_MENU  &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK  &none     &kp BSPC
+   &kp LCTRL      &kp LC(LS(TAB))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(TAB)          &tog L6    &kp INS    &kp HOME  &kp PAGE_UP      &kp BSPC  &kp ENTER
+   &kp LSHFT      &kp LG(L)        &kp LC(LEFT)  &kp LA(HOME)  &kp LC(RIGHT)  &kp DEL              &kp CAPS   &kp DEL    &kp END   &kp PAGE_DOWN    &none     &kp RSHFT
+                          	                     &none         &none          &none                &kp RCMD   &kp RALT   &kp RCTRL
+                        >;
+                };
+
+
+         8th_layer {
+            label = "";
+
+                        bindings = <
+   &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5            &kp N6    &kp N7            &kp N8     &kp N9     &kp N0    &kp MINUS
+   &kp LCTRL  &none   &kp BSLH  &kp RBKT  &kp LBKT   &none             &kp LEFT  &kp DOWN          &kp UP     &kp RIGHT  &kp SEMI  &kp EQUAL
+   &kp LSHFT  &none   &none     &none     &none      &none             &none     &kp SINGLE_QUOTE  &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+                    	        &kp LCMD  &kp LCTRL  &kp LALT          &none     &none             &none
+                        >;
+                };
+
+
+         9th_layer {
+            label = "";
+
+                        bindings = <
+   &none        &mo L11            &kp F1  &kp F2    &kp F3     &kp F10           &kp KP_NUM    &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &kp BSPC
+   &kp LG(TAB)  &kp LC(LG(LEFT))   &kp F4  &kp F5    &kp F6     &kp F11           &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
+   &kp LG(TAB)  &kp LC(LG(RIGHT))  &kp F7  &kp F8    &kp F9     &kp F12           &kp KP_MINUS  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
+                                           &kp LCMD  &kp LCTRL  &kp LALT          &tog L10      &kp KP_N0  &kp KP_DOT
+                        >;
+                };
+
+
+         10th_layer {
+            label = "";
+
+                        bindings = <
+   &kp TAB    &none  &none  &none     &none      &none             &kp KP_NUM       &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &kp BSPC
+   &kp LCTRL  &none  &none  &none     &none      &none             &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
+   &kp LSHFT  &none  &none  &none     &none      &none             &kp KP_DIVIDE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &kp RSHFT
+                            &kp LCMD  &kp LCTRL  &kp LALT          &tog L10         &kp KP_N0  &kp KP_DOT
+                        >;
+                };
+
+
+         11th_layer {
+            label = "";
+
+                        bindings = <
+   &none  &none              &kp LC(LA(LS(W)))  &kp LC(LA(LS(E)))  &kp LC(LA(LS(R)))      &kp LC(LA(LS(T)))          &kp LC(LA(LS(Y)))  &kp LC(LA(LS(U)))      &kp LC(LA(LS(I)))      &kp LC(LA(LS(O)))    &kp LC(LA(LS(P)))     &kp LC(LA(LS(BSPC)))
+   &none  &kp LC(LA(LS(A)))  &kp LC(LA(LS(S)))  &kp LC(LA(LS(D)))  &kp LC(LA(LS(F)))      &kp LC(LA(LS(G)))          &kp LC(LA(LS(H)))  &kp LC(LA(LS(J)))      &kp LC(LA(LS(K)))      &kp LC(LA(LS(L)))    &kp LC(LA(LS(SEMI)))  &kp LC(LA(LS(ENTER)))
+   &none  &kp LC(LA(LS(Z)))  &kp LC(LA(LS(X)))  &kp LC(LA(LS(C)))  &kp LC(LA(LS(V)))      &kp LC(LA(LS(B)))          &kp LC(LA(LS(N)))  &kp LC(LA(LS(M)))      &kp LC(LA(LS(COMMA)))  &kp LC(LA(LS(DOT)))  &kp LC(LA(LS(FSLH)))  &none
+                                                &mo L12            &kp LC(LA(LS(SPACE)))  &none                      &none              &kp LC(LA(LS(SPACE)))  &none
+                        >;
+                };
+
+
+         12th_layer {
+            label = "";
+
+                        bindings = <
+   &none  &none       &bt BT_SEL 0  &none  &bootloader  &none                 &none  &kp C_PLAY_PAUSE  &none         &none  &bootloader  &none
+   &none  &none       &bt BT_SEL 1  &none  &none        &out OUT_TOG          &none  &kp C_VOL_UP      &kp C_BRI_UP  &none  &none        &none
+   &none  &bt BT_CLR  &bt BT_SEL 2  &none  &none        &none                 &none  &kp C_VOL_DN      &kp C_BRI_DN  &none  &none        &none
+                                    &none  &none        &none                 &none  &none             &none
+                        >;
+                };
+
+
+        };
+};

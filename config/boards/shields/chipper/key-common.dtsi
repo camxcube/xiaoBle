@@ -1,0 +1,99 @@
+
+&mt {
+   flavor = "tap-preferred";
+   tapping_term_ms = <200>;
+};
+
+&lt {
+   flavor = "hold-preferred";
+   tapping_term_ms = <200>;
+};
+
+
+
+
+/ {
+
+
+
+    // macros
+    macros {
+        mac_screen_sleep: mac_screen_sleep {
+            label = "Put mac screen to sleep";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings
+                    = <&macro_press &kp LCTRL &kp LSHFT>
+                    , <&macro_tap &kp C_EJECT>
+                    , <&macro_release &kp LCTRL &kp LSHFT>
+                    ;
+        };
+
+        macro_caps: macro_caps {
+            label = "Capslock";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <400>; //holding time until release
+            bindings = <&kp CAPS>;
+        };
+
+        MINIMIZE: MINIMIZE {
+            label = "Minimize windows for Windows";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <35>;
+            tap-ms = <10>;
+            bindings
+                    = <&macro_press &kp LALT &kp SPACE>
+                    , <&macro_release &kp LALT &kp SPACE>
+                    , <&macro_tap &kp N>
+                    ;
+        };
+
+        WIN_MENU: WIN_MENU {
+            label = "Menu Key on Windows Keyboard";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <35>;
+            tap-ms = <100>;
+            bindings
+                    = <&macro_press &kp LSHFT &kp F10>
+                    , <&macro_release &kp LSHFT &kp F10>
+                    ;
+        };
+
+
+    };
+
+
+
+    // Tap dance setting
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RShift when tap once, CapsL when tap twice";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RSHFT>, <&kp CAPS>;
+        };
+
+        ht_hp: hold_tap_hold_preffered {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold tap with hold preferred flavor";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+
+
+
+
+
+};
