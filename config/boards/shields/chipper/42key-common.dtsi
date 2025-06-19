@@ -84,10 +84,10 @@
             label = "";
 
                         bindings = <
-   &none         &mo L11        &kp F1  &kp F2    &kp F3     &kp F10           &kp CLEAR2    &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_EQUAL     &kp BSPC
-   &kp LC(UP)    &kp LC(LEFT)   &kp F4  &kp F5    &kp F6     &kp F11           &kp KP_PLUS   &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
-   &kp LC(DOWN)  &kp LC(RIGHT)  &kp F7  &kp F8    &kp F9     &kp F12           &kp KP_MINUS  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
-                                        &kp LCMD  &kp LCTRL  &kp LALT          &tog L5       &kp KP_N0  &kp KP_DOT 
+   &none         &mo L11        &kp F7  &kp F8  &kp F9     &kp F10           &kp CLEAR2    &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_EQUAL     &kp BSPC
+   &kp LC(UP)    &kp LC(LEFT)   &kp F4  &kp F5  &kp F6     &kp F11           &kp KP_PLUS   &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
+   &kp LC(DOWN)  &kp LC(RIGHT)  &kp F1  &kp F2  &kp F3     &kp F12           &kp KP_MINUS  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
+                                        &mo L5  &kp LCTRL  &kp LALT          &tog L5       &kp KP_N0  &kp KP_DOT 
                         >;
                 };
 
@@ -96,10 +96,10 @@
             label = "";
 
                         bindings = <
-   &kp TAB    &none  &none  &none     &none      &none             &kp CLEAR2    &kp KP_N7  &kp KP_N8   &kp KP_N9  &none            &kp BSPC
-   &kp LCMD   &none  &none  &none     &none      &none             &kp KP_PLUS   &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
-   &kp LSHFT  &none  &none  &none     &none      &none             &kp KP_MINUS  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
-                            &kp LCMD  &kp LCTRL  &kp LALT          &tog L5       &kp KP_N0  &kp KP_DOT
+   &kp TAB    &none  &kp N7  &kp N8  &kp N9     &kp N0            &kp CLEAR2    &kp KP_N7  &kp KP_N8   &kp KP_N9  &none            &kp BSPC
+   &kp LCMD   &none  &kp N4  &kp N5  &kp N6     &kp N0            &kp KP_PLUS   &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
+   &kp LSHFT  &none  &kp N1  &kp N2  &kp N3     &kp N0            &kp KP_MINUS  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
+                             &none   &kp LCTRL  &kp LALT          &tog L5       &kp KP_N0  &kp KP_DOT
                         >;
                 };
 
@@ -144,10 +144,10 @@
             label = "";
 
                         bindings = <
-   &none        &mo L11            &kp F1  &kp F2    &kp F3     &kp F10           &kp KP_NUM    &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &kp BSPC
-   &kp LG(TAB)  &kp LC(LG(LEFT))   &kp F4  &kp F5    &kp F6     &kp F11           &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
-   &kp LG(TAB)  &kp LC(LG(RIGHT))  &kp F7  &kp F8    &kp F9     &kp F12           &kp KP_MINUS  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
-                                           &kp LCMD  &kp LCTRL  &kp LALT          &tog L10      &kp KP_N0  &kp KP_DOT
+   &none        &mo L11            &kp F7  &kp F8   &kp F9     &kp F10           &kp KP_NUM    &kp KP_N7  &kp KP_N8  &kp KP_N9  &none            &kp BSPC
+   &kp LG(TAB)  &kp LC(LG(LEFT))   &kp F4  &kp F5   &kp F6     &kp F11           &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY  &kp KP_ENTER
+   &kp LG(TAB)  &kp LC(LG(RIGHT))  &kp F1  &kp F2   &kp F3     &kp F12           &kp KP_MINUS  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DIVIDE    &kp RSHFT
+                                           &mo L10  &kp LCTRL  &kp LALT          &tog L10      &kp KP_N0  &kp KP_DOT
                         >;
                 };
 
@@ -156,10 +156,10 @@
             label = "";
 
                         bindings = <
-   &kp TAB    &none  &none  &none     &none      &none             &kp KP_NUM       &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &kp BSPC
-   &kp LCTRL  &none  &none  &none     &none      &none             &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
-   &kp LSHFT  &none  &none  &none     &none      &none             &kp KP_DIVIDE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &kp RSHFT
-                            &kp LCMD  &kp LCTRL  &kp LALT          &tog L10         &kp KP_N0  &kp KP_DOT
+   &kp TAB    &none  &kp N7  &kp N8  &kp N9     &kp N0            &kp KP_NUM       &kp KP_N7  &kp KP_N8  &kp KP_N9  &none         &kp BSPC
+   &kp LCTRL  &none  &kp N4  &kp N5  &kp N6     &kp N0            &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
+   &kp LSHFT  &none  &kp N1  &kp N2  &kp N3     &kp N0            &kp KP_DIVIDE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &kp RSHFT
+                             &none   &kp LCTRL  &kp LALT          &tog L10         &kp KP_N0  &kp KP_DOT
                         >;
                 };
 
