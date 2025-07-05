@@ -44,8 +44,8 @@
             label = "Minimize windows for Windows";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <35>;
-            tap-ms = <10>;
+            wait-ms = <35>; //controls how long of a delay is introduced between behaviors 
+            tap-ms = <10>; //controls how long a tapped behavior is held
             bindings
                     = <&macro_press &kp LALT &kp SPACE>
                     , <&macro_release &kp LALT &kp SPACE>
@@ -58,12 +58,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <35>;
-            tap-ms = <100>;
             bindings
                     = <&macro_press &kp LSHFT &kp F10>
                     , <&macro_release &kp LSHFT &kp F10>
                     ;
         };
+
 
 
     };
