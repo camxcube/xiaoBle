@@ -60,10 +60,10 @@
           label = "";
 
                         bindings = <
-   &kp LG(COMMA)  &kp LG(H)          &kp LG(LEFT)  &kp UP         &kp LG(RIGHT)  &kp LG(GRAVE)          &kp F13      &kp F14   &kp F15   &kp F16        &kp F17   &kp BSPC
-   &kp LCMD       &kp LC(LS(TAB))    &kp LEFT      &kp DOWN       &kp RIGHT      &kp LC(TAB)            &tog L6      &none     &kp HOME  &kp PAGE_UP    &kp BSPC  &kp ENTER
-   &kp LSHFT      &mac_screen_sleep  &kp LA(LEFT)  &kp LG(LS(H))  &kp LA(RIGHT)  &kp DEL                &macro_caps  &kp DEL   &kp END   &kp PAGE_DOWN  &none     &kp RSHFT
-                          	                       &none          &none          &none                  &kp RCTRL    &kp RALT  &kp RCMD
+   &kp LG(COMMA)  &kp LG(H)          &kp LG(LEFT)  &kp UP         &kp LG(RIGHT)  &kp LG(GRAVE)          &kp LC(ENTER)  &kp F13   &kp F14   &kp F15        &kp F16   &kp BSPC
+   &kp LCMD       &kp LC(LS(TAB))    &kp LEFT      &kp DOWN       &kp RIGHT      &kp LC(TAB)            &tog L6        &kp INS   &kp HOME  &kp PAGE_UP    &kp BSPC  &kp ENTER
+   &kp LSHFT      &mac_screen_sleep  &kp LA(LEFT)  &kp LG(LS(H))  &kp LA(RIGHT)  &kp DEL                &macro_caps    &kp DEL   &kp END   &kp PAGE_DOWN  &none     &kp RSHFT
+                          	                       &none          &none          &none                  &kp RCTRL      &kp RALT  &kp RCMD
                         >;
                 };
 
@@ -120,10 +120,10 @@
             label = "";
 
                         bindings = <
-   &kp LC(COMMA)  &kp LA(F4)       &kp HOME      &kp UP        &kp END        &none                &WIN_MENU  &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK  &none     &kp BSPC
-   &kp LCTRL      &kp LC(LS(TAB))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(TAB)          &tog L6    &kp INS    &kp HOME  &kp PAGE_UP      &kp BSPC  &kp ENTER
-   &kp LSHFT      &kp LG(L)        &kp LC(LEFT)  &kp LA(HOME)  &kp LC(RIGHT)  &kp DEL              &kp CAPS   &kp DEL    &kp END   &kp PAGE_DOWN    &none     &kp RSHFT
-                          	                     &none         &none          &none                &kp RCMD   &kp RALT   &kp RCTRL
+   &kp LC(COMMA)  &kp LA(F4)       &kp HOME      &kp UP        &kp END        &none                &kp K_CMENU  &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK  &none     &kp BSPC
+   &kp LCTRL      &kp LC(LS(TAB))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(TAB)          &tog L6      &kp INS    &kp HOME  &kp PAGE_UP      &kp BSPC  &kp ENTER
+   &kp LSHFT      &kp LG(L)        &kp LC(LEFT)  &kp LA(HOME)  &kp LC(RIGHT)  &kp DEL              &kp CAPS     &kp DEL    &kp END   &kp PAGE_DOWN    &none     &kp RSHFT
+                          	                     &none         &none          &none                &kp RCMD     &kp RALT   &kp RCTRL
                         >;
                 };
 
